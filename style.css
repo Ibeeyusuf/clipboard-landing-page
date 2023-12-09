@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    font-family: 'Bai Jamjuree'
+    , sans-serif;
+    text-align: center;
+    display: grid;
+        
+}
+header{
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+header img{
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+}
+header small{
+    margin-top: 10px;
+    font-size: 10px;
+}
+button.ios{
+    padding: 7px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: hsl(171, 66%, 44%); 
+    font-size: 10px;
+    cursor: pointer;
+}
+button.mac{
+    padding: 7px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: hsl(233, 100%, 69%); 
+    font-size: 10px;
+    cursor: pointer;
+}
+.track{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.track h4{
+    text-align: center;
+}
+.laptop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.laptop img{
+    width: 400px;
+    height: 300px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    max-height: 180px;
+    max-width: 200px;   
+    margin-top: 24px;
+    margin-left: 46px;
+
+}
+.access{
+    margin: 0 auto;
+    display: grid;
+}
+.access img{
+    width: 450px;
+    height: 280px;
+    margin: 30px auto;
+}
+.myflex{
+    display: flex;
+    margin: 30px auto;
+    max-width: 700px;
+    font-size: 13px;
+}
+.myflex img{
+    height: 15px;
+    margin-bottom:15px ;
+}
+.myflex p{
+    font-size: 11px;
+    line-height: 17px;
+}
+.partners{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+.partners img{
+    height: 18px;
+}
+aside{
+    margin: 20px auto;
+    display: grid;
+    gap: 8px;
+    max-width: 500px;
+    justify-content: center;
+}
+aside p{
+    font-size: 10px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(201, 11%, 95%);
+    height: 53px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    width: 300px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.brands img{
+    height: 8px;
+}
+.brands{
+    margin: auto 0px;
+    cursor: pointer;
+}
+.info p:hover{
+    color: #26BBA4;
+}
+.brands img:hover{
+    color: #26BBA4;
+}
+footer img{
+    height: 30px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto 0px;
+    text-align: left;
+}
+@media only screen and (max-width:650px){
+    body{
+        padding: 0px 20px;
+    }
+    header img{
+        width: 80px;
+        height: 80px;
+        margin: 15px auto;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .laptop{
+        grid-template-columns: 1fr ;
+        margin: auto;
+        justify-items: center;
+    }
+    .laptop img{
+        width: 300px;
+        height: 250px;
+    }
+    .card{
+        margin:30px auto;
+        gap: 15px;
+    }
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .info{
+        flex-direction: column;
+        text-align: center;
+        line-height: 25px;
+    }
+    .myflex{
+        flex-direction: column;
+        width: 200px;
+        gap: 30px;
+    }
+    .partners{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70px;
+        height: auto;
+        column-gap: 40px;
+        margin-bottom: 60px;
+    }
+    .partners div{
+        line-height: 50px;
+    }
+    .brands{
+       display: flex;
+       margin-top: 20px;
+       justify-content: center;
+       gap: 15px; 
+    }
+    .btn{
+        margin-top: 20px;
+        gap: 15px;
+    }
+    button.ios {
+        width: 200px;
+        padding: 10px;
+        margin: auto;
+    }
+    button.mac{
+        width: 200px;
+        padding: 10px;
+        margin: auto;
+    }
+}
