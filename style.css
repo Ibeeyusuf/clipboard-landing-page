@@ -57,10 +57,14 @@ button.mac{
 .laptop{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 .laptop img{
     width: 400px;
     height: 300px;
+}
+.sml{
+    display: grid;
 }
 .card{
     display: flex;
